@@ -1,0 +1,23 @@
+export const searchMovie = (query, movies) => {
+  const searchResult = movies.filter(
+    (movie) =>
+      movie.title.toLowerCase().includes(query) ||
+      movie.description.toLowerCase().includes(query)
+  );
+  return searchResult;
+};
+
+//   `<li class="movies-item">
+//             <article class="movie">
+//               <div class="movie-photo">
+//                 <img src="${movie.poster}" alt="Постер ${movie.title}" />
+//               </div>
+//               <div class="movie-info">
+//                 <h2 class="movie-title">${movie.title}</h2>
+//                 <p class="movie-year">${movie.year}</p>
+//                 <p class="movie-description">${movie.description}</p>
+//                 <p class="movie-ganre">${movie.genre.join(", ")}</p>
+//                 <p class="movie-rating">${movie.rating}</p>
+//               </div>
+//             </article>
+//           </li>`
