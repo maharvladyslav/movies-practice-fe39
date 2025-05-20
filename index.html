@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="search">
+          <form class="search-form">
+            <label>
+              <input
+                id="search-movie"
+                type="search"
+                placeholder="Search"
+                data-search
+              />
+            </label>
+          </form>
+        </div>
+        <div class="ganre" data-filter>
+          <h2 class="header-title">Genre</h2>
+          <ul class="ganre-list">
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="drama">Драма</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="crime">Кримінал</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="mystery">Містика</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="biography">
+                Біографічні
+              </button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="western">Вестерн</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="comedy">Комедія</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="family">Сімейні</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="animation">
+                Анімаційні
+              </button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="romance">
+                Романтичні
+              </button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="music">Мюзикли</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="adventure">
+                Пригоди
+              </button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="thriller">
+                Триллер
+              </button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="sci-fi">Сай-фай</button>
+            </li>
+            <li class="ganre-item">
+              <button class="ganre-button" data-ganre="action">Екшн</button>
+            </li>
+          </ul>
+        </div>
+        <div class="sort">
+          <select name="sort" id="sort" data-sort>
+            <option disabled selected>Sort by</option>
+            <option value="year">Рік</option>
+            <option value="rating">Оцінка</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="movies">
+        <div class="container">
+          <div class="movies-container" data-movies></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
